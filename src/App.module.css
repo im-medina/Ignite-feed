@@ -1,0 +1,10 @@
+.wrapper {
+  max-width: 70rem; /* feed size + sidebar + gap between / 16(pixels) */
+  margin: 2rem auto; /* centralized */
+  padding: 0 1rem; /* when sshrinking the size below 70rem, won't let the items to stick together*/
+
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  gap: 2rem;
+  align-items: flex-start; /* make the feed and side bar allign to the top */
+}
