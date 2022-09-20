@@ -1,6 +1,6 @@
-#Ignite Feed
+<p>Ignite Feed</p>
 
-## Project being made with ReactJS for studies.
+Project being made with ReactJS for studies.
 
 ## Instalation
 
@@ -14,6 +14,11 @@ or
 
 ```bash
 yarn create vite
+```
+
+Install [date-fns](https://date-fns.org/) library
+```bash
+npm i date-fns
 ```
 
 then
