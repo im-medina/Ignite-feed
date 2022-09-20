@@ -11,10 +11,11 @@ export function Post({ author, publishedAt, content }) {
    'Post ótimo'
   ]);
 
+  //format date
   const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", {
     locale: ptBR,
   });
-
+//format date
   const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
     locale: ptBR,
     addSuffix: true
@@ -23,9 +24,12 @@ export function Post({ author, publishedAt, content }) {
   function handleCrateNewComment() {
     event.preventDefault()
     
+    const newCommentText = event.target.comment.value
     //imutabilidade - não passo somente o que quero inserir, e sim qual é o novo valor
-    setComments([...comments, comments.length + 1]);
+    setComments([...comments, newCommentText]);
     //spread operator (...) - le o valor davariavel 'comments' l. 11 e 12 e copia
+
+    event.target.comment.value = '';
   }
 
   return (
@@ -57,7 +61,8 @@ export function Post({ author, publishedAt, content }) {
       <form onSubmit={handleCrateNewComment} className={styles.commentForm}>
         <strong>Deixe seu feedback</strong>
 
-        <textarea
+        <textarea 
+          name="comment"
           placeholder="Deixe um comentário"
         />
 
