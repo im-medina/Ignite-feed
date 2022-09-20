@@ -2,7 +2,8 @@
 
 ## Project being made with ReactJS for studies.
 
-##Instalation
+## Instalation
+
 Use the package manager [NPM](https://nodejs.org/pt-br/) or [YARN] (https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable) to install [VITE](https://vitejs.dev/)
 
 ```bash
