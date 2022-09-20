@@ -1,4 +1,4 @@
-<p>Ignite Feed</p>
+## Ignite Feed
 
 Project being made with ReactJS for studies.
 
@@ -17,6 +17,7 @@ yarn create vite
 ```
 
 Install [date-fns](https://date-fns.org/) library
+
 ```bash
 npm i date-fns
 ```
